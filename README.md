@@ -2,23 +2,21 @@
 
 Amazon Orders Dataset (2011–2014)
 
-This project focuses on cleaning an Amazon orders dataset downloaded from Kaggle and processed using MySQL.
+This project focuses  on cleaning and standardizing an Amazon orders dataset downloaded from Kaggle and processed using MySQL Workbench.
 
 
  **Dataset Overview**
  
-  •   Dataset: Amazon Orders (**Excel → CSV**)
+  •   Raw dataset was provided in Excel, converted into CSV, imported into MySQL WorkBench.
   
-  •  Imported Raw csv file for querying
+  •  A table was created to store the cleaned dataset while preserving the original data.
 
-  •  Imported into MySQL Workbench
-
-  •	  Cleaned and structured for analysis
+  •	  Multiple cleaning operation were carried out to ensure data consistency, accuracy, and readability.
 
 
 **Data Cleaning Task Performed**
 
-1. Table Setup
+**1. Table Setup**
   •	Confirmed importation of complete rows and column data types
 
 	•	Created a new table product_record
@@ -28,18 +26,18 @@ This project focuses on cleaning an Amazon orders dataset downloaded from Kaggle
 	•	Preserved original file for reference
 
 
-3. **Column Corrections & Standardization**
+2. **Column Corrections & Standardization**
 
 	•	Fixed column names:
 Example → Order Date → order_date
 
 	•	Removed blank spaces in column names using ALTER
 
-	•	Modified text-based date fields into proper DATE format
+	•	Modified columns with date values into proper DATE data types
 
-	•	Used TRIM() to remove trailing and leading spaces
+	•	Applied TRIM() to remove trailing and leading spaces
 
-	•	Added spacing to concatenated text for readability
+	•	Added spacing to concatenated text fields for readability
   
 	•	Removed duplicate rows
   
