@@ -44,18 +44,6 @@ Using MySQL Workbench, I performed systematic data cleaning to prepare the datas
 
 •	Checked for null or inconsistent values using SQL conditions
 	
-## Screenshots of work
-
-### Before Cleaning
-![image 5](https://github.com/user-attachments/assets/8565cb72-8c61-48f9-8e44-c10ab70acf40)
-
-### After Cleaning
-![image 6](https://github.com/user-attachments/assets/8cc91afb-b6ea-4e22-aa59-b1d3136f84d4)
-
-### Sample Query
-<img width="436" height="276" alt="image 1" src="https://github.com/user-attachments/assets/b9a46d77-0d2a-44f9-8b6a-6f7ca3869ec1" />
-
-
 
 ### Tools Used
 
