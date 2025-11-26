@@ -5,7 +5,7 @@ Amazon Orders Dataset (2011–2014)
 This project focuses  on cleaning and standardizing an Amazon orders dataset downloaded from Kaggle and processed using MySQL Workbench.
 
 
- **Dataset Overview**
+ **Project Overview**
  
   •   Raw dataset was provided in Excel, converted into CSV, imported into MySQL WorkBench.
   
@@ -17,13 +17,12 @@ This project focuses  on cleaning and standardizing an Amazon orders dataset dow
 **Data Cleaning Task Performed**
 
 **1. Table Setup**
-  •	Confirmed importation of complete rows and column data types
 
-	•	Created a new table product_record
+•	Created a table product_record
 
-	•	Duplicated the table (order_record) to store a copy of the dataset
+•	Duplicated the table (order_record) to store a copy of the dataset
 
-	•	Preserved original file for reference
+•	Preserved original file for reference
 
 
 2. **Column Corrections & Standardization**
