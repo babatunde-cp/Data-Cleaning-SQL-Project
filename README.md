@@ -1,28 +1,74 @@
-# Data-Cleaning-SQL-Project
+# **Data-Cleaning-SQL-Project**
+
+Amazon Orders Dataset (2011–2014)
+
+This project focuses on cleaning an Amazon orders dataset downloaded from Kaggle and processed using MySQL.
 
 
-Data Cleaning of Amazon orders dataset between 2011 to 2014.
-![image 2](https://github.com/user-attachments/assets/f860557d-e0f7-4ce3-9ab4-41dfe65b5f20)
+ **Dataset Overview**
+ 
+  •   Dataset: Amazon Orders (**Excel → CSV**)
+  
+  •  Imported Raw csv file for querying
 
-In this SQL Data cleaning project
+  •  Imported into MySQL Workbench
 
-The dataset "Amazon Orders" was downloaded from kaggle in Excel format,and then converted into a CSV file.
+  •	  Cleaned and structured for analysis
 
-The file (order_record)was imported into MySql workbench for querying.
 
-Data Cleaning Procedure
-- Created a new table(order_record) and copied the dataset into it, in order to have the original for refernce.
--  Changed columns having blank spaces e.g Order Date to Order_date, to make the query easier, by using alter.
-- Checked for duplicates and removed them.
-Standardizing the dataset
-  - Deleted invalid rows in columns with integer,text,date and double data type
-  - ![Image 4](https://github.com/user-attachments/assets/00c555de-51a4-4106-a328-1864dbc89220)
+**Data Cleaning Task Performed**
 
-  - Used Trim to remove spaces.
-  - For columns with date, i modified the text data type to date
-  - Added spaces to cogested text for easy readability
-  - ![image 3](https://github.com/user-attachments/assets/3a5b6957-8ba2-489b-b3de-9d5b19379a1f)
+1. Table Setup
+  •	Confirmed importation of complete rows and column data types
 
-  - Used regexp to replace integer colums having texts and vice versa
-  - Made use of ALTER, i changed the names of all columns to look more concise for analysis. 
-![image 1](https://github.com/user-attachments/assets/f2639a68-2789-474f-a9a2-4d8fbc848125)
+	•	Created a new table product_record
+
+	•	Duplicated the table (order_record) to store a copy of the dataset
+
+	•	Preserved original file for reference
+
+
+3. **Column Corrections & Standardization**
+
+	•	Fixed column names:
+Example → Order Date → order_date
+
+	•	Removed blank spaces in column names using ALTER
+
+	•	Modified text-based date fields into proper DATE format
+
+	•	Used TRIM() to remove trailing and leading spaces
+
+	•	Added spacing to concatenated text for readability
+  
+	•	Removed duplicate rows
+  
+	•	Deleted invalid rows across integer, text, date, and double data types
+  
+	•	Checked for null or inconsistent values
+
+  •	Case sensitive naming of columns
+
+Here is a screenshot of part of the cleaning work
+
+**Before Cleaning**
+![image 5](https://github.com/user-attachments/assets/8565cb72-8c61-48f9-8e44-c10ab70acf40)
+
+**After Cleaning**
+![image 6](https://github.com/user-attachments/assets/8cc91afb-b6ea-4e22-aa59-b1d3136f84d4)
+
+**Sample Query**
+![image 2](https://github.com/user-attachments/assets/f8bbe0fe-2dd5-4066-ae0a-a47f382d740e)
+
+
+**Tools Used**
+
+	•	MySQL Workbench
+	•	SQL (SELECT, UPDATE, ALTER, TRIM, CAST, DATE,REGEXP functions)
+	•	Excel / CSV
+
+
+
+
+
+
