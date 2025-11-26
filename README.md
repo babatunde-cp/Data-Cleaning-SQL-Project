@@ -1,68 +1,77 @@
 # **Data-Cleaning-SQL-Project**
 
-Amazon Orders Dataset (2011–2014)
+### Amazon Orders Data Cleaning (SQL Project)
 
-This project focuses  on cleaning and standardizing an Amazon orders dataset downloaded from Kaggle and processed using MySQL Workbench.
-
-
- **Project Overview**
- 
-  •   Raw dataset was provided in Excel, converted into CSV, imported into MySQL WorkBench.
-  
-  •  A table was created to store the cleaned dataset while preserving the original data.
-
-  •	  Multiple cleaning operation were carried out to ensure data consistency, accuracy, and readability.
+This project focuses on cleaning an Amazon Orders dataset downloaded from Kaggle.
+The dataset originally contained formatting issues, inconsistent data types, blank spaces, and duplicate or invalid records.
+Using MySQL Workbench, I performed systematic data cleaning to prepare the dataset for analysis and reporting.
 
 
-**Data Cleaning Task Performed**
+ ### Objectives of the Data Cleaning
+•	Remove formatting errors and inconsistencies
 
-**1. Table Setup**
+•	Standardize column names and text fields
 
-•	Created a table product_record
+•	Convert date columns into valid SQL DATE formats
 
-•	Duplicated the table (order_record) to store a copy of the dataset
+•	Remove duplicate, null, and invalid entries
 
-•	Preserved original file for reference
+•	Improve readability of the dataset
+
+•	Prepare clean data for future analysis or visualization
 
 
-2. **Column Corrections & Standardization**
+ ### Steps Taken During Cleaning
 
-	•	Fixed column names:
-Example → Order Date → order_date
-
+ Column Fixes
+	•	Renamed inconsistent column names (Example: Order Date → order_date)
 	•	Removed blank spaces in column names using ALTER
+	•	Enforced case-sensitive, consistent naming across the dataset
 
-	•	Modified columns with date values into proper DATE data types
+ ## ###Data Type Corrections
+•	Converted date fields into proper SQL DATE types
 
-	•	Applied TRIM() to remove trailing and leading spaces
+•	Cleaned numerical columns containing text or invalid characters
 
-	•	Added spacing to concatenated text fields for readability
-  
-	•	Removed duplicate rows
-  
-	•	Deleted invalid rows across integer, text, date, and double data types
-  
-	•	Checked for null or inconsistent values
+•	Applied TRIM() to remove leading and trailing spaces
 
-  •	Case sensitive naming of columns
+ ## Data Quality Improvements
+•	Added spacing to concatenated text fields for readability
 
-Here is a screenshot of part of the cleaning work
+•	Removed duplicate rows
 
-**Before Cleaning**
+•	Deleted invalid rows across integer, text, date, and double data types
+
+•	Checked for null or inconsistent values using SQL conditions
+	
+## Screenshots of work
+
+### Before Cleaning
 ![image 5](https://github.com/user-attachments/assets/8565cb72-8c61-48f9-8e44-c10ab70acf40)
 
-**After Cleaning**
+### After Cleaning
 ![image 6](https://github.com/user-attachments/assets/8cc91afb-b6ea-4e22-aa59-b1d3136f84d4)
 
-**Sample Query**
-![image 2](https://github.com/user-attachments/assets/f8bbe0fe-2dd5-4066-ae0a-a47f382d740e)
+### Sample Query
+<img width="436" height="276" alt="image 1" src="https://github.com/user-attachments/assets/b9a46d77-0d2a-44f9-8b6a-6f7ca3869ec1" />
 
 
-**Tools Used**
 
-	•	MySQL Workbench
-	•	SQL (SELECT, UPDATE, ALTER, TRIM, CAST, DATE,REGEXP functions)
-	•	Excel / CSV
+### Tools Used
+
+•	MySQL Workbench
+
+•	SQL (SELECT, UPDATE, ALTER, TRIM, CAST, DATE,REGEXP functions)
+
+•	Kaggle (source)
+
+
+### Result
+•	Dataset is now clean, standardized, and ready for deeper analysis.
+
+•	All formatting errors, invalid data types, and duplicates were successfully removed.
+
+•	Queries now run efficiently, providing accurate results.
 
 
 
